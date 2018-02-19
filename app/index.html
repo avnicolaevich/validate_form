@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Modal</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="css/main.min.css">
+
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Modal Login Form</h2>
+				<button id="loginFormButton" style="width:auto;">Login</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="loginForm" class="modal">
+		<form id="form" class="modal-content" action="submit_action.php">
+			<div class="imgcontainer">
+				<span class="close b-close" title="Close Modal">&times;</span>
+				<img src="./img/img_avatar2.png" alt="Avatar" class="avatar">
+			</div>
+			<div class="form-container">
+				<div class="error-message"></div>
+				<label for="userName">
+					<b>Username</b>
+				</label>
+				<input type="text" placeholder="Enter Username" name="userName" id="userName"
+					   qtip-content="This field is required" qtip-position="right" class="input">
+
+				<label for="password">
+					<b>Password</b>
+				</label>
+
+				<input type="password" placeholder="Enter Password" name="password" id="password"
+					   qtip-content="This field is required" qtip-position="right" class="input">
+
+				<button type="submit">Login</button>
+
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			</div>
+			<div class="form-container" style="background-color:#f1f1f1">
+				<button type="reset" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		</form>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
